@@ -63,17 +63,7 @@ MAIN.append(home);
 var edu = document.createElement('div');
 edu.id = 'edu-content';
 edu.className = 'edu content';
-edu.innerText = 'education';
 MAIN.append(edu);
-
-var edu1 = document.createElement('div');
-edu1.innerText == 'WILLAMETTE';
-edu.append(edu1);
-
-var edu2 = document.createElement('div');
-edu2.innerText == 'COLUMBIA';
-edu.append(edu2);
-
 
 var exp = document.createElement('div');
 exp.id = 'exp-content';
