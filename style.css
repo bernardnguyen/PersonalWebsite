@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Frijole|Orbitron');
+
+* {font-family: 'Orbitron', san-serif;}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #3F3F3F;
+}
+
+#header {
+    position: fixed;
+    top: 0px;
+    height: 65px;
+    width: 100%;
+    background-color: #003D44;
+    display: flex;
+}
+
+#logo {
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 2.3em;
+    font-family: 'Frijole', cursive;
+    color: #31C193;
+}
+
+#nav {
+    margin-right: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.nav-buttons {
+    margin-right: 10px;
+    color: #BDBDBD;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+}
+
+.nav-buttons:hover {
+    color: #31C193;
+}
+
+.nav-buttons:focus {
+    outline: none;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+    height: 100%;
+}
+
+.content {
+    background-color: #BDBDBD;  
+    padding: 5px;
+    height: 400px; 
+}
