@@ -192,6 +192,6 @@ body {
 .slick-prev:before, .slick-next:before { font-family: "slick"; font-weight: 900; font-size: 60px; line-height: 1; color: #48716C; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .slick-prev:before { content: "‹"; }
 [dir="rtl"] .slick-prev:before { content: "›"; }
-[dir="rtl"] .slick-next { left: -10px; top: 70px; right: auto; }
+[dir="rtl"] .slick-next { left: -10px; top: 7h0px; right: auto; }
 .slick-next:before { content: "›"; }
 [dir="rtl"] .slick-next:before { content: "‹"; }
