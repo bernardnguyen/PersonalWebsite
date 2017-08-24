@@ -54,27 +54,41 @@ var MAIN = document.createElement('div');
 MAIN.id = 'main';
 container.append(MAIN);
 
+function addLine(){
+  var line = document.createElement('hr');
+  line.className = 'line';
+  MAIN.append(line);
+}
+
 var home = document.createElement('div');
 home.id = 'home-content';
 home.className = 'home content';
 home.innerText = 'HOME - COMING SOON';
 MAIN.append(home);
 
+addLine();
+
 var edu = document.createElement('div');
 edu.id = 'edu-content';
 edu.className = 'edu content';
 MAIN.append(edu);
+
+addLine();
 
 var exp = document.createElement('div');
 exp.id = 'exp-content';
 exp.className = 'exp content';
 MAIN.append(exp);
 
+addLine();
+
 var proj = document.createElement('div');
 proj.id = 'proj-content';
 proj.className = 'proj content';
 proj.innerText = 'PROJECTS - COMING SOON';
 MAIN.append(proj);
+
+addLine();
 
 var rand = document.createElement('div');
 rand.id = 'rand-content';
@@ -87,19 +101,19 @@ $('.home').click(function(e){
   });
 
 $('.edu').click(function(e){
-    $(document).scrollTop(410)
+    $(document).scrollTop(380)
   });
 
 $('.exp').click(function(e){
-    $(document).scrollTop(820)
+    $(document).scrollTop(860)
   });
 
 $('.proj').click(function(e){
-    $(document).scrollTop(1230)
+    $(document).scrollTop(1320)
   });
 
 $('.rand').click(function(e){
-    $(document).scrollTop(1640);
+    $(document).scrollTop(2000);
 });
 
 

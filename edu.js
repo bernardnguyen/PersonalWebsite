@@ -50,6 +50,8 @@ addMajor('Columbia', 'Electrical Engineering', 'Electronic Circuits, Communicati
 
 $(document).ready(function(){
     $('.edu').slick({
-      dots: true
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 4324
     });
   });

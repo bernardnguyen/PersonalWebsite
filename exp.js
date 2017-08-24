@@ -71,5 +71,7 @@ addDetails('witshelp', 'Manage, lead, and train student employees through day-to
 $(document).ready(function(){
     $('.exp').slick({
       dots: true,
+      autoplay: true,
+      autoplaySpeed: 5000
     });
   });

@@ -77,6 +77,27 @@ body {
     height: 400px; 
 }
 
+.line{
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 30px; 
+    border-style: solid; 
+    border-color: #31C193; 
+    border-width: 1px 0 0 0; 
+    border-radius: 20px; 
+}
+
+.line:before {
+    display: block; 
+    content: ""; 
+    height: 30px; 
+    margin-top: -31px; 
+    border-style: solid; 
+    border-color: #31C193; 
+    border-width: 0 0 1px 0; 
+    border-radius: 20px; 
+}
+
 #Willamette {
     background-image: url('images/WU.jpg');
 }
@@ -168,7 +189,7 @@ body {
 
 
 
-.slick-prev:before, .slick-next:before { font-family: "slick"; font-size: 40px; line-height: 1; color: #48716C; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.slick-prev:before, .slick-next:before { font-family: "slick"; font-weight: 900; font-size: 60px; line-height: 1; color: #48716C; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .slick-prev:before { content: "‹"; }
 [dir="rtl"] .slick-prev:before { content: "›"; }
 [dir="rtl"] .slick-next { left: -10px; top: 70px; right: auto; }
