@@ -2,10 +2,13 @@
 
 * {font-family: 'Orbitron', san-serif;}
 
+
+*:focus {outline: none;}
+
 body {
     padding: 0;
     margin: 0;
-    background-color: #DEDEDE;
+    background-color: #FFFFFF;
 }
 
 #header {
@@ -13,9 +16,23 @@ body {
     top: 0px;
     height: 65px;
     width: 100%;
-    background-color: #003D44;
+    background-color: #696969;
     display: flex;
     z-index: 99;
+}
+
+#footer{
+    height: 65px;
+    width: 100%;
+    background-color: #696969;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-details{
+    color: white;
+    padding: 25px;
 }
 
 #logo {
@@ -35,7 +52,7 @@ body {
 
 .nav-buttons {
     margin-right: 10px;
-    color: #BDBDBD;
+    color: #FFFFFF;
     background: none;
     border: none;
     font-size: 1.5em;
@@ -43,10 +60,6 @@ body {
 
 .nav-buttons:hover {
     color: #31C193;
-}
-
-.nav-buttons:focus {
-    outline: none;
 }
 
 #main {
@@ -64,12 +77,24 @@ body {
     height: 400px; 
 }
 
-#willamette {
+#Willamette {
     background-image: url('images/WU.jpg');
 }
 
-#columbia {
+#Columbia {
     background-image: url('images/CU.jpg');
+}
+
+#codesmith {
+    background-image: url('images/codesmith.jpg');
+}
+
+#witstech {
+    background-image: url('images/techshop.jpg');
+}
+
+#witshelp{
+    background-image: url('images/ford.jpg');
 }
 
 .slide{
@@ -77,3 +102,75 @@ body {
     background-position: top center;
     background-size: cover;
 }
+
+.slide-info{
+    border-radius: 25px;
+    height: 350px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 25px;    
+    text-align: center;
+    background: rgba(255, 255, 255, 0.50);
+    color: black;
+    font-size: 1.2em;
+}
+
+.slide-title{
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+.slide-details{
+    margin-top: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}
+
+.major-title{
+    margin-top: 25px;
+}
+
+.coursework{
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 0.8em;
+}
+
+.bullets:before {
+    content:"• ";
+}
+
+.bullets {
+    font-size: 0.8em;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}
+
+.hyperlink {
+    color: blue;
+}
+
+.hyperlink:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.slick-prev:before, .slick-next:before { font-family: "slick"; font-size: 40px; line-height: 1; color: #48716C; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.slick-prev:before { content: "‹"; }
+[dir="rtl"] .slick-prev:before { content: "›"; }
+[dir="rtl"] .slick-next { left: -10px; top: 70px; right: auto; }
+.slick-next:before { content: "›"; }
+[dir="rtl"] .slick-next:before { content: "‹"; }

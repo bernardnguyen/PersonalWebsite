@@ -57,7 +57,7 @@ container.append(MAIN);
 var home = document.createElement('div');
 home.id = 'home-content';
 home.className = 'home content';
-home.innerText = 'home';
+home.innerText = 'HOME - COMING SOON';
 MAIN.append(home);
 
 var edu = document.createElement('div');
@@ -68,19 +68,18 @@ MAIN.append(edu);
 var exp = document.createElement('div');
 exp.id = 'exp-content';
 exp.className = 'exp content';
-exp.innerText = 'experience';
 MAIN.append(exp);
 
 var proj = document.createElement('div');
 proj.id = 'proj-content';
 proj.className = 'proj content';
-proj.innerText = 'projects';
+proj.innerText = 'PROJECTS - COMING SOON';
 MAIN.append(proj);
 
 var rand = document.createElement('div');
 rand.id = 'rand-content';
 rand.className = 'rand content';
-rand.innerText = 'random';
+rand.innerText = 'RANDOM - COMING SOON';
 MAIN.append(rand);
 
 $('.home').click(function(e){
@@ -102,3 +101,26 @@ $('.proj').click(function(e){
 $('.rand').click(function(e){
     $(document).scrollTop(1640);
 });
+
+
+
+/****************  FOOTER  *****************/
+
+var footer = document.createElement('div');
+footer.id = 'footer';
+container.append(footer);
+
+var address = document.createElement('div');
+address.className = 'footer-details';
+address.innerText = '30 Valley Vista Ct. Fremont, CA 94539'
+footer.append(address);
+
+var phone = document.createElement('div');
+phone.className = 'footer-details';
+phone.innerText = '( 408 ) 515 - 1478';
+footer.append(phone);
+
+var email = document.createElement('div');
+email.className = 'footer-details';
+email.innerText = 'bernardquynguyen@gmail.com';
+footer.append(email);
