@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "main.js",
   "engines": {
-    "node": "6.11.2",
+    "node": "8.3.0",
     "npm": "5.3.0"
   },
   "script": {
@@ -12,6 +12,6 @@
   "author": "Bernard Quy Nguyen",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.4"
   }
 }
