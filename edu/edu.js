@@ -2,6 +2,7 @@ if (typeof document != 'undefined'){
 
 var div = document.getElementById('main');
 
+addSchool('Mission San Jose High School', '(September 2009-June 2013)', 'Fremont, CA', true);
 addSchool('Willamette', '(August 2013-May 2016)','Salem, OR');
 addSchool('Columbia', '(August 2016-May 2018)','New York City, NY');
 
@@ -21,9 +22,9 @@ addParagraph(colDets, 'SMALL PARAGRAPH ABOUT CSI');
 
 /**************** TEXT FORMATTING FUNCTIONS *******************/
 
-function addSchool(univ, time, location){
+function addSchool(univ, time, location, hs=false){
     var image = document.createElement('div');
-    image.id = univ;
+    image.id = (hs) ? 'msjhs' : univ;
     image.className = 'image';
     div.append(image);
 
@@ -36,7 +37,7 @@ function addSchool(univ, time, location){
     box.append(header);
 
     var name = document.createElement('div');
-    name.innerText = univ + ' University';
+    name.innerText = (hs) ? univ : univ + ' University';
     name.className = 'title';
     header.append(name);
 
@@ -51,7 +52,7 @@ function addSchool(univ, time, location){
     header.append(attendance);
 
     var details = document.createElement('div');
-    details.id = univ+'-details';
+    details.id = (hs) ? 'msjhs-details' : univ+'-details';
     details.className = 'paragraph';
     box.append(details);
 }
