@@ -1,3 +1,5 @@
+if (typeof document != 'undefined'){
+
 var div = document.getElementById('main');
 
 addSchool('Willamette', '(August 2013-May 2016)','Salem, OR');
@@ -58,4 +60,6 @@ function addParagraph(div, text){
     var paragraph = document.createElement('div');
     paragraph.innerText = text;
     div.append(paragraph);
+}
+
 }

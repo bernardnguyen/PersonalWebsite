@@ -1,3 +1,5 @@
+if (typeof document != 'undefined'){
+
 var div = document.getElementById('main');
 
 addExperience('witshelp', 'Help Desk Technician', 'Willamette Integrated Technology Services (WITS)', '(December 2013-May 2016)');
@@ -67,4 +69,6 @@ function addParagraph(div, text){
     var paragraph = document.createElement('div');
     paragraph.innerText = text;
     div.append(paragraph);
+}
+
 }
