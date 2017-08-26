@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-var edu = require('./edu/edu.js');
+var edu = require('./edu.html');
 var exp = require('./exp/exp.js');
 var proj = require('./proj/proj.js');
 var rand = require('./rand/rand.js');
