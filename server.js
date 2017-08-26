@@ -1,10 +1,10 @@
 var express = require('express');
 var app = express();
 
-var edu = require('./edu');
-var exp = require('./exp');
-var proj = require('./proj');
-var rand = require('./rand');
+var edu = require('./edu/');
+var exp = require('./exp/');
+var proj = require('./proj/');
+var rand = require('./rand/');
 
 
 /************** MIDDLEWARE ***************/
