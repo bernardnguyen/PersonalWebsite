@@ -1,7 +1,9 @@
 var express = require('express');
 var app = express();
-var edu = require('./edu.js');
-var exp = require('./exp.js');
+var edu = require('./edu/edu.js');
+var exp = require('./exp/exp.js');
+var proj = require('./proj/proj.js');
+var rand = require('./rand/rand.js');
 
 
 /************** MIDDLEWARE ***************/
@@ -13,16 +15,22 @@ function logreq(req, res, next){
 
 function sendData(req, res, next){
   if (req.url === '/education'){
-      res.send(edu);
-  } else if (req.url === '/experience'){
-      res.send(exp);
+    res.send(edu);
+  } else if (req.url === '/experiences'){
+    res.send(exp);
+  } else if (req.url === '/projects'){
+    res.send(proj);
+  } else if (req.url === '/random'){
+    res.send(rand);
   }
 }
 
 /************* DEFINE ROUTES *************/
 
 app.get('/education', logreq, sendData);
-app.get('/experience', logreq, sendData);
+app.get('/experiences', logreq, sendData);
+app.get('/projects', logreq, sendData);
+app.get('/random', logreq, sendData);
 
 app.use(express.static(__dirname + '/'));
 
