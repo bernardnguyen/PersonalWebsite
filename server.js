@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-var edu = require('./edu.html');
+var edu = require('./edu/edu.js');
 var exp = require('./exp/exp.js');
 var proj = require('./proj/proj.js');
 var rand = require('./rand/rand.js');
@@ -33,7 +33,10 @@ app.get('/experiences', logreq, sendData);
 app.get('/projects', logreq, sendData);
 app.get('/random', logreq, sendData);
 
-app.use(express.static(__dirname + '/'));
+//app.use(express.static(__dirname + '/'));
+
+app.use(express.static(path.join(__dirname, 'public'),{index:false,extensions:['html']}));
+
 
 
 /************ LISTEN ON PORT **************/
