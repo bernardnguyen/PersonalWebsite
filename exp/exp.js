@@ -2,23 +2,42 @@ if (typeof document != 'undefined'){
 
 var div = document.getElementById('main');
 
+
+/*********** HELP DESK ***********/
+
 addExperience('witshelp', 'Help Desk Technician', 'Willamette Integrated Technology Services (WITS)', '(December 2013-May 2016)');
-addExperience('witstech', 'Tech Shop Assistant', 'Willamette Integrated Technology Services (WITS)', '(August 2014-May 2016)');
-addExperience('wustl', 'Introduction to Electrical Engineering', 'Washington University in St. Louis', '(December 2014-January 2015)');
-addExperience('codesmith', 'Summer Academy of Code', 'Codesmith, LA', '(August 2017)');
-
 var help = document.getElementById('witshelp-details');
-var tech = document.getElementById('witstech-details');
-var wustl = document.getElementById('wustl-details');
-var code = document.getElementById('codesmith-details');
-
 addParagraph(help, 'HELP DESK STUFF');
 
+
+
+/************* TECH SHOP **************/
+
+addExperience('witstech', 'Tech Shop Assistant', 'Willamette Integrated Technology Services (WITS)', '(August 2014-May 2016)');
+var tech = document.getElementById('witstech-details');
 addParagraph(tech, 'TECH SHOP STUFF');
 
+
+
+/************* WUSTL **************/
+
+addExperience('wustl', 'Introduction to Electrical Engineering', 'Washington University in St. Louis', '(December 2014-January 2015)');
+var wustl = document.getElementById('wustl-details');
 addParagraph(wustl, 'JTERM');
 
+
+
+/********** CODESMITH **************/
+
+addExperience('codesmith', 'Summer Academy of Code', 'Codesmith, LA', '(August 2017)');
+var code = document.getElementById('codesmith-details');
 addParagraph(code, 'CODESMITH STUFF');
+
+
+
+
+
+
 
 
 
