@@ -49,7 +49,7 @@ app.get('/random', function(req, res) {
   res.sendfile('./rand.html');
 });
 
-app.use(express.static(__dirname + 'html'));
+app.use(express.static(__dirname + '/'));
 
 /************ LISTEN ON PORT **************/
 
