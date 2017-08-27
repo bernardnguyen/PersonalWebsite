@@ -1,10 +1,10 @@
 var express = require('express');
 var app = express();
 
-var edu = require('./edu/');
-var exp = require('./exp/');
-var proj = require('./proj/');
-var rand = require('./rand/');
+// var edu = require('./edu/');
+// var exp = require('./exp/');
+// var proj = require('./proj/');
+// var rand = require('./rand/');
 
 
 /************** MIDDLEWARE ***************/
@@ -28,10 +28,14 @@ function sendData(req, res, next){
 
 /************* DEFINE ROUTES *************/
 
-app.get('/education', logreq, sendData);
-app.get('/experiences', logreq, sendData);
-app.get('/projects', logreq, sendData);
-app.get('/random', logreq, sendData);
+// app.get('/education', logreq, sendData);
+// app.get('/experiences', logreq, sendData);
+// app.get('/projects', logreq, sendData);
+// app.get('/random', logreq, sendData);
+
+app.get('/education', function(req, res) {
+  res.sendfile('./edu/index.html');
+});
 
 app.use(express.static(__dirname + 'html'));
 
