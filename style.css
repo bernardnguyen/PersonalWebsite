@@ -80,6 +80,7 @@ body {
     width: 100%;
     background-position: top center;
     background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 
 .details{
@@ -144,7 +145,7 @@ body {
     width: 300px;
     background-position: top center;
     background-size: auto 100%;
-    background-repeat: none;
+    background-repeat: no-repeat;
 }
 
 .slideshow{
@@ -161,7 +162,7 @@ body {
     width: 250px;
     background-position: top center;
     background-size: auto 100%;
-    background-repeat: none;
+    background-repeat: no-repeat;
 }
 
 .sectionTitle{
@@ -176,14 +177,14 @@ body {
     width: 500px;
     background-position: top center;
     background-size: auto 100%;
-    background-repeat: none;
+    background-repeat: no-repeat;
 }
 
 .picWithDescription{
     height: 600px;
     background-position: center;
     background-size: auto 100%;
-    background-repeat: none;
+    background-repeat: no-repeat;
     position: relative;
 }
 
