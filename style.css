@@ -29,6 +29,10 @@ body {
     color: #31C193;
 }
 
+#logo:hover{
+    cursor: pointer;
+}
+
 #nav {
     margin-right: 10px;
     display: flex;
