@@ -79,7 +79,7 @@ body {
     height: 500px;
     width: 100%;
     background-position: top center;
-    background-size: contain;
+    background-size: cover;
 }
 
 .details{
