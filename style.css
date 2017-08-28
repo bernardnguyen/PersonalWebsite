@@ -185,8 +185,7 @@ body {
 .picWithDescription{
     height: 600px;
     background-position: center;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 }
 
