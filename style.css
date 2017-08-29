@@ -41,12 +41,12 @@ body {
 }
 
 .nav-buttons {
-    margin-right: 10px;
+    margin-right: 30px;
     font-family: 'Exo', extra-bold;
     color: #FFFFFF;
     background: none;
     border: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 .nav-buttons:hover {
@@ -119,7 +119,7 @@ body {
 
 .paragraph{
     line-height: 2.5em;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-indent: 10%;
 }
 
@@ -277,6 +277,10 @@ body {
 
 #research{
     background-image: url('./proj/images/star.jpg');
+}
+
+#pi{
+    background-image: url('./proj/images/pi.png');
 }
 
 #balloons{

@@ -5,7 +5,7 @@ addSectionTitle('Overview');
 
 picWithText('pf', true);
 var pf = document.getElementById('pf-details');
-addDescription(pf, 'My name is Bernard Nguyen, and I am currently studying to be an electrical engineer. I grew up in Fremont, CA, love to play basketball, eat good food, and play poker with my friends. I made this website to help you get to know a little bit more about me.', false);
+addDescription(pf, 'My name is Bernard Nguyen, and I am currently studying to be an electrical engineer. I grew up in Fremont, CA, love to play basketball, eat good food, and play poker with my friends. I made this website to help you get to know all the little things about me.', false);
 
 
 /****** EDUCATION ******/

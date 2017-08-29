@@ -20,7 +20,7 @@ Final Picture Slideshow
 
 addHeader('laughing');
 var haha = document.getElementById('laughing-details');
-addParagraph(haha, 'I come from a very large extended family. My father had 11 siblings, and my mother had 8. I personally have 3 siblings: an older sister, an older brother, and a younger sister. In my free time, I like to play guitar, especially with my siblings and cousins. I also love watching basketball, playing basketball, playing poker, studying the game of poker, and bowling. A typical night in Fremont involves one of bowling, poker, or board games with my friends. As you can probably tell, this is a page dedicated to the random things that make up someone\'s (specifically my) life.');
+addParagraph(haha, 'I come from a very large extended family. My father had 11 siblings, and my mother had 8. I myself have 3 siblings: an older sister, an older brother, and a younger sister. In my free time, I like to play guitar, especially with my siblings and cousins. I also love watching basketball, playing basketball, playing poker, studying the game of poker, and bowling. A typical night in Fremont involves one of bowling, poker, or board games with my friends. As you can probably already tell, this is a page dedicated to the RANDOM things that make up someone\'s life. (Specifically mine)');
 
 var family = document.createElement('div');
 family.className = 'slideshow';
@@ -50,12 +50,12 @@ picWithText('dollar', false, true, 'As a senior in high school, my government te
 
 /****    FRACTAL   ****/
 
-picWithText('fractal', true, true, 'During my sophomore year at Willamette University, the math department participated with 19 other organizations around the world to make a fractal cube out of business cards. The entire university participated, with students, faculty, and staff constructing cubes during class, at work, etc. Each cube was made of 6 business cards, and it took 20 smaller cubes to make one of the next size up. We made a giant cube 4 levels large. The only reason I\'m in the picture on the right is because my friend (and CS TA) organized the event, and she would only sign off on my lab early if I helped in the final construction of the fractal cube.');
+picWithText('fractal', true, true, 'During my sophomore year at Willamette, the math department participated with 19 other organizations around the world to make a fractal cube out of business cards. The entire university participated, with students, faculty, and staff constructing cubes during class, at work, etc. Each cube was made of 6 business cards, and it took 20 smaller cubes to make one of the next size up. We made a giant cube 4 levels large. The only reason I\'m in the picture on the right is because my friend (and CS TA) organized the event, and she would only sign off on my lab early if I helped in the final construction of the fractal cube.');
 
 
 /****    POKER     ****/
 
-picWithText('poker', true, false, 'Summers spent in Fremont consist of my friends and I playing poker about once a week. This picture shows the craziest hand I\'ve ever witnessed. First a friend went all-in pre-flop with pocket 2s. Unfortunately, he was quickly called by another friend with pocket As, and another friend with pocket Ks. The flop came KA2, and everyone had flopped a set. The turn was an irrelevant Q, and the winner appeared to be set. On the river, my friend got his fourth 2, and took the hand.');
+picWithText('poker', true, false, 'Summers spent in Fremont consist of my friends and I playing poker about once a week. This picture shows the craziest hand I\'ve ever witnessed. First a friend went all-in pre-flop with pocket 2s. Unfortunately, he was quickly called by another friend with pocket As, and another friend with pocket Ks. The flop came KA2, and everyone had flopped a set. The turn was an irrelevant Q, and the winner appeared to be determined. On the river, my friend got his fourth 2, and took the hand.');
 
 
 /****    PICTURES SLIDESHOW   *****/
