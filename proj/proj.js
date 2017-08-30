@@ -60,7 +60,7 @@ var connect = document.getElementById('connect-details');
 addParagraph(connect, 'In my final semester at Willamette University, I took a machine learning class. One of the assignments during that class was to make a game against a computer that would get better as we played. One of my upcoming projects is to combine machine learning and web development to make a Connect 4 bot online.');
 addParagraph(connect, 'My goal is to have a user play against the machine that will slowly get better. Users can choose between playing against various bots, including a "RandomIdiot", a "MiniMax" strategist, a trained neural network "Master", and a brand new neural network "Dummy".');
 var link = document.createElement('div');
-link.innerHTML = hyperlink('Connect4Bot', 'https://bernardquynguyen-connect4bot.herokuapp.com') + 'is now live. Currently, the only functional bot is the RandomIdiot, so have fun winning!'
+link.innerHTML = hyperlink('Connect4Bot', 'https://bernardquynguyen-connect4bot.herokuapp.com') + ' is now live. Currently, the only functional bot is the RandomIdiot, so have fun winning!'
 connect.append(link);
 
 
