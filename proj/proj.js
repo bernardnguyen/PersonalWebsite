@@ -55,12 +55,13 @@ var link = document.createElement('div');
 link.innerHTML = hyperlink('Run-A-Way', 'https://run-a-way.herokuapp.com') + ' should still be live, but its bugs are probably permanent. (Just hit "Sign in." None of the database functionality is live.) Sorry!';
 run.append(link);
 
-addProject('connect', 'Solving Connect 4', '(Coming Soon)');
+addProject('connect', 'Solving Connect 4', '(In Progress)');
 var connect = document.getElementById('connect-details');
 addParagraph(connect, 'In my final semester at Willamette University, I took a machine learning class. One of the assignments during that class was to make a game against a computer that would get better as we played. One of my upcoming projects is to combine machine learning and web development to make a Connect 4 bot online.');
-addParagraph(connect, 'My goal is to have a user play against the machine that will slowly get better. Users can choose between playing against the trained "master", or a new bot who they can train on their own. I\'ll update this page when the website is complete.');
-
-
+addParagraph(connect, 'My goal is to have a user play against the machine that will slowly get better. Users can choose between playing against various bots, including a "RandomIdiot", a "MiniMax" strategist, a trained neural network "Master", and a brand new neural network "Dummy".');
+var link = document.createElement('div');
+link.innerHTML = hyperlink('Connect4Bot', 'https://bernardquynguyen-connect4bot.herokuapp.com') + 'is now live. Currently, the only functional bot is the RandomIdiot, so have fun winning!'
+connect.append(link);
 
 
 
