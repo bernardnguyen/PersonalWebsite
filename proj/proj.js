@@ -60,8 +60,9 @@ var connect = document.getElementById('connect-details');
 addParagraph(connect, 'In my final semester at Willamette University, I took a machine learning class. One of the assignments during that class was to make a game against a computer that would get better as we played. One of my upcoming projects is to combine machine learning and web development to make a Connect 4 bot online.');
 addParagraph(connect, 'My goal is to have a user play against the machine that will slowly get better. Users can choose between playing against various bots, including a "RandomIdiot", a "MiniMax" strategist, a trained neural network "Master", and a brand new neural network "Dummy".');
 var link = document.createElement('div');
-link.innerHTML = hyperlink('Connect4Bot', 'https://bernardquynguyen-connect4bot.herokuapp.com') + ' is now live. Currently, the only functional bot is the RandomIdiot, so have fun winning!'
+link.innerHTML = hyperlink('Connect4Bot', 'https://bernardquynguyen-connect4bot.herokuapp.com') + ' is now live. The bots available to play against right now are RandomIdiot and Minimax. The RandomIdiot chooses a column at random to place his pieces. Have fun winning!'
 connect.append(link);
+addParagraph(connect, 'Minimax is slightly more complicated. The minimax algorithm assumes both players are "perfect" players. It builds a game tree based on the current board and looks at every possibility 4 moves into the future. The algorithm minimzes your gains, while maximizing its own. In order to evaluate how good the boards are, I first built a weight system that evaluated positional advantage. To do this, I made a Gaussian array centered at the lower center of the board. This encourages the bot to play towards the center, rather than the edges (where there is less opportunity to connect 4 discs). The bot then checks for links of 3 discs, and links of 4, each with increasing weight. (These prioritize connecting pieces over positional advantage).')
 
 
 
