@@ -10,9 +10,13 @@ var div = document.getElementById('main');
  * CSI
  * Pi Visualizer
  * Beer
- * CONNECT 4(?)
+ * CONNECT 4
  * 
  */
+
+addProject('overview', 'Overview', '');
+var overview = document.getElementById('overview-details');
+addParagraph(overview, 'This page contains a summary of all sorts of projects, not necessarily technology-related. Scroll down to read about my experiences building anything from a computer to a coffee table to various apps.');
 
 addProject('desktop', 'Building My First Computer', '(Summer 2014)');
 var desktop = document.getElementById('desktop-details');
@@ -62,7 +66,7 @@ addParagraph(connect, 'Users can choose between playing against various bots, in
 var link = document.createElement('div');
 link.innerHTML = 'You can play against the bots at ' + hyperlink('Connect4Bot', 'https://bernardquynguyen-connect4bot.herokuapp.com') + '. The bots available to play against right now are RandomIdiot and Minimax. The RandomIdiot chooses a column at random to place his pieces. (Have fun winning!)'
 connect.append(link);
-addParagraph(connect, 'Minimax is slightly more complicated. The minimax algorithm assumes both players are "perfect" players. It builds a game tree based on the current board and looks at every possibility 4 moves into the future. The algorithm minimzes your gains, while maximizing its own. In order to evaluate how good the boards are, I first built a weight system that evaluated positional advantage. To do this, I made a Gaussian array centered at the lower center of the board. This encourages the bot to play towards the center, rather than the edges (where there is less opportunity to connect 4 discs). The bot then checks for links of 3 discs, and links of 4, each with increasing weight. (These prioritize connecting pieces over positional advantage).')
+addParagraph(connect, 'Minimax is slightly more complicated. The minimax algorithm assumes both players are "perfect" players. It builds a game tree based on the current board and looks at every possibility 4 moves into the future. The algorithm minimzes your gains, while maximizing its own. Using alpha-beta pruning, I was able to eliminate redundant branches of the game tree and increase the bot\'s scope to 5 moves into the future rather than 4. In order to evaluate how good the individual boards are, I first built a weight system that evaluated positional advantage. To do this, I made a Gaussian array centered at the lower center of the board. This encourages the bot to play towards the center, rather than the edges (where there are less opportunities to connect 4 discs). The bot then checks for links of 3 discs, and links of 4, each with increasing weight. (These prioritize connecting pieces over positional advantage).')
 
 
 

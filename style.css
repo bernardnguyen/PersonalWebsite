@@ -267,6 +267,10 @@ body {
 
 /* PROJECTS PAGE */
 
+#overview{
+    height: 0px;
+}
+
 #desktop{
     background-image: url('./proj/images/desktop.jpg');
 }
