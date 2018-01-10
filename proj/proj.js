@@ -68,9 +68,10 @@ link.innerHTML = 'You can play against the bots at ' + hyperlink('Connect4Bot', 
 connect.append(link);
 addParagraph(connect, 'Minimax is slightly more complicated. The minimax algorithm assumes both players are "perfect" players. It builds a game tree based on the current board and looks at every possibility 4 moves into the future. The algorithm minimzes your gains, while maximizing its own. Using alpha-beta pruning, I was able to eliminate redundant branches of the game tree and increase the bot\'s scope to 5 moves into the future rather than 4. In order to evaluate how good the individual boards are, I first built a weight system that evaluated positional advantage. To do this, I made a Gaussian array centered at the lower center of the board. This encourages the bot to play towards the center, rather than the edges (where there are less opportunities to connect 4 discs). The bot then checks for links of 3 discs, and links of 4, each with increasing weight. (These prioritize connecting pieces over positional advantage).')
 
-
-
-
+addProject('iris', 'Biometric Iris Scanner', 'December 2017');
+var iris = document.getElementById('iris-details');
+addParagraph(iris, 'For our final project in my digital signals processing course, we decided to implement a biometric iris scanner in MATLAB. The major steps of a secure biometric iris scanner include segmentation of the iris, feature extraction, encoding, and comparison. In order to segment the iris, we first identified the circles that correspond to the iris and the pupil. After removing the pupil and extraneous surroundings from the image, we normalized the "donut" shaped iris into a rectangle. Then we encoded the information using a 2D Gabor filter and saved the binary data as a small matrix. This sample could then be compared to other binary samples using various methods including the hamming distance or the correlation between two samples.')
+addParagraph(iris, 'Because we were limited by our hardware (i.e. the lack of an infrared camera for quality images without extranneous reflections), we weren\'t able to implement a perfect scanner. Our threshold for a positive match was fairly low (70% match), and we still got a few false negatives. That being said, we consider our project to be a success because there were no false positives, which is more important in a secure biometric system.')
 
  /**************** FORMATTING ***************/
 
